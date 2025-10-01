@@ -2,8 +2,69 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.sidebar {
+  background-color: #1b92d4;
+  color: #ffffff;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 3fr;
+  padding: 1rem;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  justify-items: left;
+}
+
+.title-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.dash-icon {
+  width: 4rem;
+  fill: #ffffff;
+}
+
+.semi-icon {
+  width: 1.5rem;
+  fill: #ffffff;
+}
+
+.sidebar > nav {
+  font-size: 1.2rem;
+}
+
+.main-nav,
+.secondary-nav {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.item p {
+  font-weight: 600;
+}
+
+.sidebar > nav:last-child {
+  margin-top: 2rem; /* spacing between main & secondary nav */
 }
